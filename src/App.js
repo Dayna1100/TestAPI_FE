@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from "react"
+import StudentList from './components/studentlist/StudentList';
 
 function App() {
 	const [students, setStudents] = useState([])
@@ -33,6 +34,7 @@ function App() {
 	}
   return (
 		<div className="App">
+      <StudentList />
 			<h1>Students</h1>
 			<form onSubmit={addName}>
 				<label htmlFor="name">Name</label>
